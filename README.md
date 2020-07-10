@@ -1,4 +1,3 @@
-# iteration_station
 
 # Iteration Station Project: Does the weather in Atlanta make us crazy in Traffic?
 
@@ -6,6 +5,8 @@ Amber Pizzo,
 Alex Caughman,
 John Shows,
 Steven White
+
+Link to Kaggle dataset used: https://www.kaggle.com/sobhanmoosavi/us-accidents 
 
 # Main Questions to be answered -
 
@@ -35,9 +36,9 @@ As can be seen above, increased precipitation does relate to higher average traf
 
 To determine the statistical impact of precipitation, we created box plots of two zip codes that stand out in the chart above.  Zip code 30312 stands out because it appears to show the highest relationship between precipitation and traffic.  Zip code 30324 shows the lowest relationship.
 
-In the below box plot on the left, zip code 30312 shows that for each increasing precipitation amount, the mean of the traffic accident count goes up.  But we also see a very large number of outliers.  This indicates that while precipitation has a relationship with traffic accidents, it is not the only factor in determining accidents.  
+In the first box plot below, zip code 30312 shows that for each increasing precipitation amount, the mean of the traffic accident count goes up.  But we also see a very large number of outliers.  This indicates that while precipitation has a relationship with traffic accidents, it is not the only factor in determining accidents.  
 
-In the box plot on the right, zip code 30324 precipitation shows a noticeably lower relationship with traffic accidents. As precipitation increases, the mean number of traffic incidents appears constant.
+In the second box plot, zip code 30324 precipitation shows a noticeably lower relationship with traffic accidents. As precipitation increases, the mean number of traffic incidents appears constant.
 
 
 (Figure 3 30312_Precip_Boxplot.png and 30324_Precip_Boxplot.png)
