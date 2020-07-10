@@ -124,6 +124,8 @@ When we looked at interstate correlation with precipitation, we confirm again th
 
 ![alt text](https://github.com/alexcaughman/iteration_station/blob/master/Images/Accident_Avg_Interstate_Comparison.png)
 
-Our findings: Yes, precipitaion plays a role in traffic accidents, but not as significantly as expected. All the weather factors we evaluated pointed to fairly weak correlations. However, any correlation is meaningful, as it will only serve to instigate more accidents on already congested roads.
+
+## Our findings: 
+Yes, precipitaion plays a role in traffic accidents, but not as significantly as expected. All the weather factors we evaluated pointed to fairly weak correlations. However, any correlation is meaningful, as it will only serve to instigate more accidents on already congested roads.
 
 
