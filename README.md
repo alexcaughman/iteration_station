@@ -12,7 +12,7 @@ Link to Kaggle dataset used: https://www.kaggle.com/sobhanmoosavi/us-accidents
 
 ## How does precipitation impact traffic incidents in Atlanta?
 
-Using traffic data filtered down to the Atlanta metropolitan statistical area (MSA), accident counts were selected for a group of ten zip codes.  These zip codes reflected the areas with the highest volume of traffic accidents, and therefore, gave us the most data to evaluate in our statistics. Furthermore, as can be seen in the chart below, these zip codes had over twice the accidents compared to the other zip codes in the Atlanta MSA.
+Using traffic data filtered down to the Atlanta metropolitan statistical area (MSA), accident counts were selected for a group of ten zip codes.  These zip codes reflected the areas with the highest volume of traffic accidents, and therefore, gave us the most data to evaluate in our statistics. Furthermore, as can be seen in Figure 1, these zip codes had over twice the accidents compared to the other zip codes in the Atlanta MSA.
 
 Additionally, we extracted data for a full two-year period (January 2018 through December 2019).  Doing this gave us even more traffic data to evaluate.  When the weather data was added to the analysis it provided a wide variety of weather conditions to evaluate. Increasing the timeframe from one year to two years granted us more weather variation to analyze, as 2018 had significantly more precipitation than 2019. 
 
@@ -36,7 +36,7 @@ As can be seen above, increased precipitation does relate to higher average traf
 
 To determine the statistical impact of precipitation, we created box plots of two zip codes that stand out in the chart above.  Zip code 30312 stands out because it appears to show the highest relationship between precipitation and traffic.  Zip code 30324 shows the lowest relationship.
 
-In the first box plot below, zip code 30312 shows that for each increasing precipitation amount, the mean of the traffic accident count goes up.  But we also see a very large number of outliers.  This indicates that while precipitation has a relationship with traffic accidents, it is not the only factor in determining accidents.  
+In the first box plot below, zip code 30312 shows that for each increasing precipitation amount, the mean of the traffic accident count goes up.  We also see a large number of outliers.  This is to be expected for the baseline data in particular, as the baseline data was extensive (many more 0 precipitation days than days with precipitation).
 
 In the second box plot, zip code 30324 precipitation shows a noticeably lower relationship with traffic accidents. As precipitation increases, the mean number of traffic incidents appears constant.
 
@@ -49,15 +49,14 @@ In the second box plot, zip code 30324 precipitation shows a noticeably lower re
 
 So how strong are the relationships?
 
-To answer this, we calculated the correlation coefficient of accidents and precipitation in the same zip codes as above.  The calculated correlations differed by zip code but generally show a weak positive correlation of precipitation to accident count.
-
+To answer this, we calculated the correlation coefficient of accidents and precipitation in the same zip codes as above, and found overall that precipitation has a weak positive correlation to number of accidents. This will be explored in the section addressing other weather factors.
 
 
 ## What types of traffic incidents are affected by weather?
 
-Our dataset was somewhat limited in the variation of traffic incident data available.  The dataset did include the number of traffic accidents, as well as a severity index of the traffic accidents.  The severity index did not quantify the accidents in any more meaningful way than just count.  Therefore, we used count of accidents per day as our metric for analysis.
+Our dataset was somewhat limited in the variation of traffic incident data available.  The dataset did include the number of traffic accidents, as well as a severity index of the traffic accidents.  The severity index did not quantify the accidents in any more meaningful way than just count. We concluded this as most of the data fell into only 2 categories: Severity 2 and Severity 3. However, what these severity levels actually signify was open to some level of interpretation.  Therefore, we used count of accidents per day as our metric for analysis.
 
-We also tried to evaluate interstates vs surface streets in our analysis, but due to the volume of traffic carried on our interstate system, interstate crashes vastly outnumbered surface street accidents.
+We also tried to evaluate interstate accidents vs residential street accidents in our analysis, but due to the volume of traffic carried on our interstate system, interstate crashes vastly outnumbered residential street accidents.
 
 This will be further discussed in the last section of this document.
 
@@ -65,7 +64,7 @@ This will be further discussed in the last section of this document.
 
 If precipitation has a weak positive correlation, what other weather conditions may affect weather?
 
-In addition to precipitation, our weather data provided; maximum temperature, minimum temperature, average temperature, wind chill, snow depth, wind speed, wind gust, cloud cover and relative humidity.  
+In addition to precipitation, our weather data provided maximum temperature, minimum temperature, average temperature, wind chill, snow depth, wind speed, wind gust, cloud cover and relative humidity.  
 
 We chose to further evaluate humidity, temperature, and wind speed because these conditions were continuous and made the most sense given the general conditions in Atlanta.
 
@@ -86,13 +85,15 @@ Low Wind Speed: below 9mph
 
 
 
-The table shows that precipitation has a positive correlation to accidents, but so does humidity.  Still, both are weak correlations.  It is obvious that weather plays a part in traffic incidents, but not the major part.
+The table shows that precipitation has a positive correlation to accidents, but so does humidity.  Still, both are weak correlations.  It is obvious that weather plays a part in traffic incidents, but not a major part.
 
 We were interested to see if there were any relevant relationships between these variables and accident count.  We did find some interesting results from these evaluations.  As can be seen below (figure 5), precipitation and humidity have similar, albeit weak, correlations.  
 
 (Figure 5: Correlation_Comparison_Precip_Humidity.png)
 
 ![alt text](https://github.com/alexcaughman/iteration_station/blob/master/Images/Correlation_Comparison_Humidity_Precipitation.png)
+
+From this chart we can see that many of the zip codes actually see more correlation to humidity than precipitation. However, when looking at average precipitation and average humidity to try to understand this further, we cannot make any meaningful conclusions. It is to be noted that if precipitation was reported in %, we would likely be better able to compare average precipitation and average humidty in a meaningful way, given they would have the same units and share the same right axis.
 
 Also, we wanted to consider whether the heat index in Atlanta had any bearing on traffic accidents.  Unfortunately, we did not have enough data to calculate that metric.
 
@@ -122,5 +123,7 @@ When we looked at interstate correlation with precipitation, we confirm again th
 (Figure 7 Accident_Avg_Interstate_Comparison.png)
 
 ![alt text](https://github.com/alexcaughman/iteration_station/blob/master/Images/Accident_Avg_Interstate_Comparison.png)
+
+Our findings: Yes, precipitaion plays a role in traffic accidents, but not as significantly as expected. All the weather factors we evaluated pointed to fairly weak correlations. However, any correlation is meaningful, as it will only serve to instigate more accidents on already congested roads.
 
 

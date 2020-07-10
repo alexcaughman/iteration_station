@@ -1,5 +1,8 @@
+#api keys
 api_keys.py
+#large dataset
 US_Accidents_Dec19.csv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
