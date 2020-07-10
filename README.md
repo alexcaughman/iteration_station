@@ -12,7 +12,7 @@ Main Questions to be answered -
 
 How does precipitation impact traffic incidents in Atlanta?
 
-Using traffic data filtered down to the Atlanta metropolitan area (MSA), accident counts were selected for a group of ten zip codes.  These zip codes reflected the areas with the highest volume of traffic accidents, and therefore, gave us the most data to evaluate in our statistics. Furthermore, as can be seen in the chart below, these zip codes had over twice the accidents compared to the other zip codes in the Atlanta MSA.
+Using traffic data filtered down to the Atlanta metropolitan statistical area (MSA), accident counts were selected for a group of ten zip codes.  These zip codes reflected the areas with the highest volume of traffic accidents, and therefore, gave us the most data to evaluate in our statistics. Furthermore, as can be seen in the chart below, these zip codes had over twice the accidents compared to the other zip codes in the Atlanta MSA.
 
 Additionally, we extracted data for a full two-year period (January 2018 through December 2019).  Doing this gave us even more traffic data to evaluate.  When the weather data was added to the analysis it provided a wide variety of weather conditions to evaluate. Increasing the timeframe from one year to two years granted us more weather variation to analyze, as 2018 had significantly more precipitation than 2019. 
 
