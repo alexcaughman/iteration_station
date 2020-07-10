@@ -1,7 +1,6 @@
 # iteration_station
 
-Iteration Station Project:
-Does the weather in Atlanta make us crazy in Traffic?
+# Iteration Station Project: Does the weather in Atlanta make us crazy in Traffic?
 
 Amber Pizzo,
 Alex Caughman,
