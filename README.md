@@ -17,6 +17,7 @@ Using traffic data filtered down to the Atlanta metropolitan statistical area (M
 Additionally, we extracted data for a full two-year period (January 2018 through December 2019).  Doing this gave us even more traffic data to evaluate.  When the weather data was added to the analysis it provided a wide variety of weather conditions to evaluate. Increasing the timeframe from one year to two years granted us more weather variation to analyze, as 2018 had significantly more precipitation than 2019. 
 
 
+![alt text](https://github.com/alexcaughman/iteration_station/blob/master/Images/Accidents_by_Zip_code.png)
 
 (Figure 1:  Accidents_by_Zip_code.png)
 Once we had the areas for our analysis determined, we used weather data in conjunction with traffic accidents to make some observations.  
